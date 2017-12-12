@@ -151,7 +151,7 @@ function main() {
 
                 //get all the feature layers
                 var eArray = Object.values(chart.map()._layers)
-                                    .filter( function(e) { if( e.hasOwnProperty("feature") ) return e; } );
+                                   .filter( function(e) { if( e.hasOwnProperty("feature") ) return e; } );
 
                 //get path(layer) popupContent and update the map info
                 eArray.forEach(function(layer) {
@@ -371,7 +371,7 @@ function main() {
                    .radiusValueAccessor( function(d) { return d.value; } )
                    .maxBubbleRelativeSize(0.22)
                    .r(d3.scale.linear()
-                         .domain(d3.extent(bubbleChart.group().all(), bubbleChart.valueAccessor())) 
+                        .domain( d3.extent( bubbleChart.group().all(), bubbleChart.valueAccessor() ) ) 
                     )
                    .elasticRadius(true)
                    .x(d3.scale.ordinal())
