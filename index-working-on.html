@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+    <title>Bylaw Infractions</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/keen_io/keen-dashboards.css">
+    <link rel="stylesheet" href="libs/dc/dc.min.css">
+    <link rel="stylesheet" href="libs/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="libs/font_awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/dc_addons/dc-leaflet-legend.css">
+    <link rel="stylesheet" href="libs/slideMenu/L.Control.SlideMenu.css">  
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.js">
+    <link rel="stylesheet" href="libs/keen_io/keen.min.js">
+    <link rel="stylesheet" href="css/bylaw_infractions.css">
+</head>
+<body class="application">
+    <!-- Navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="https://mikelotis.github.io/Edmonton-Bylaw-Infractions/">
+                    Edmonton's Bylaw Infractions
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Makes Row Responsive -->
+    <div id="board" class="container-fluid">
+        <div class="row">
+            <!-- column 1 for row -->
+            <div class="col-lg-4 col-md-4">
+                <!-- row in column 1 -->
+                <div class="row">
+                    <!-- Map -->
+                    <div class="col-lg-12 col-md-12">
+                        <div class="chart-wrapper">
+                            <div class="chart-stage">
+                                <div class="chart-title">
+                                    <text>Neighbourhoods Map</text>
+                                </div>
+                                <span id="records-count"></span>
+                                <div id="map-plot"></div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <!-- column 2 for row -->
+            <div class="col-lg-4 col-md-4">
+                <!-- row in column 2 -->
+                <div class="row">
+                    <!-- Row Chart -->
+                    <div class="col-lg-12 col-md-12">
+                        <div class="chart-wrapper">
+                            <div class="chart-stage">
+                                <div id="row-chart" class="svg-container">
+                                    <div class="chart-title">
+                                        Yearly Trend
+                                        <span>
+                                            <a class="reset" style="display:none" href="javascript:rowChart.filterAll(); dc.redrawAll();">
+                                                reset
+                                            </a>
+                                        </span>                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- Bar Chart -->
+                    <div class="col-lg-12 col-md-12">
+                        <div class="chart-wrapper">
+                            <div class="chart-stage">
+                                <div id="bar-chart" class="svg-container">
+                                    <div class="chart-title">
+                                        Monthly Trend
+                                        <span>
+                                            <a class="reset" style="display:none" href="javascript:barChart.filterAll(); dc.redrawAll();">
+                                                reset
+                                            </a>
+                                        </span>                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                           
+                </div>
+            </div>
+            <!-- column 3 for row -->
+            <div class="col-lg-4 col-md-4">
+                <!-- row in column 3 -->
+                <div class="row">
+                    <!-- Pie Chart -->
+                    <div class="col-lg-12 col-md-12">
+                        <div class="chart-wrapper">
+                            <div class="chart-stage">
+                                <div id="pie-plot" class="svg-container">
+                                    <div class="chart-title">
+                                        Types of Complaint
+                                        <span>
+                                            <a class="reset" style="display:none" href="javascript:pie.filterAll(); dc.redrawAll();">
+                                                reset
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bubble Cloud -->
+                    <div class="col-lg-12 col-md-12">
+                        <div class="chart-wrapper">
+                            <div class="chart-stage">
+                                <div id="bubble-plot" class="svg-container">
+                                    <div class="chart-title">
+                                        Initiators and Status
+                                        <span>
+                                            <a class="reset" style="display:none" href="javascript:bubbleChart.filterAll(); dc.redrawAll();">
+                                                reset
+                                            </a>
+                                        </span>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="libs/d3/d3.min.js"></script>
+    <script src="libs/crossfilter/crossfilter.min.js"></script>
+    <script src="libs/dc/dc.min.js"></script>
+    <script src="libs/leaflet/dist/leaflet.js"></script>
+    <script src="libs/slideMenu/L.Control.SlideMenu.js"></script>
+    <script src="libs/dc_addons/base-map-chart.js"></script>
+    <script src="libs/dc_addons/base-leaflet-chart.js"></script>
+    <script src="libs/dc_addons/leaflet-choropleth-chart.js"></script>
+    <script src="libs/dc_addons/bubble-cloud.js"></script>
+    <script src="libs/dc_addons/leaflet-legend.js"></script>
+    <script src="js/bylaw_infractions.js"></script>
+</body>
+</html>
