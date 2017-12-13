@@ -19,7 +19,7 @@
         var _tiles = function (map) {
             //-------I changed the default tile layer to black and white------
             L.tileLayer(
-                'http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png',
+                'https://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png',
                 {
                     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 }
