@@ -411,6 +411,5 @@ function main() {
 
 } //main
      
-// window.onload = main;
+window.onload = main;
 
-main();
