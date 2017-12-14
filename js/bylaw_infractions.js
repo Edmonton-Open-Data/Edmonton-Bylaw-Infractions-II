@@ -253,7 +253,12 @@ function main() {
                 .useViewBoxResizing(true)
                 .label(function(d) { return d.key; })
                 .title(function(d) { return d.value.toLocaleString(); })
-                .elasticX(true);
+                .elasticX(true)
+                .on("pretransition.xAxis", function(chart, filter){
+                    chart.selectAll("#row-chart g.tick text")
+                         .style("font-size", Math.round(chart.height() * 0.04, 1));
+                });
+        rowChart.xAxis().ticks(6);        
         rowChart.render();
 
 
@@ -272,7 +277,12 @@ function main() {
                 .title(function(d) { return d.value.toLocaleString(); })
                 .x(d3.scale.ordinal().domain(monthNames))
                 .xUnits(dc.units.ordinal)
-                .elasticY(true);
+                .elasticY(true)
+                .on("pretransition.yAxis", function(chart, filter){
+                    chart.selectAll("#bar-chart g.tick text")
+                         .style("font-size", Math.round(chart.height() * 0.04, 1));                    
+                });
+        barChart.xAxis().ticks(6);           
         barChart.render();  
 
 
@@ -297,10 +307,12 @@ function main() {
                      .text('')
                      .append("tspan")
                      .text( function(d) { return d.name; } )
+                     .style("font-size", Math.round(chart.height() * 0.04, 1))
                      .append("tspan")
                      .attr('x', Math.round(pie.width() * 0.35, 1))
                      .attr('text-anchor', 'end')
-                     .text( function(d) { return d.data.toLocaleString(); } );
+                     .text( function(d) { return d.data.toLocaleString(); } )
+                     .style("font-size", Math.round(chart.height() * 0.04, 1));
             });
         pie.render();
 
@@ -385,9 +397,7 @@ function main() {
         //------------Font Size for axis and label texts------------
         chartTexts = [ {selector: "text.pie-slice"       , scale: 0.05}, 
                        {selector: "text.row"             , scale: 0.05}, 
-                       {selector: "g.node text"          , scale: 0.04}, 
-                       {selector: "g.tick text"          , scale: 0.04}, 
-                       {selector: "g.dc-legend-item text", scale: 0.045}
+                       {selector: "g.node text"          , scale: 0.04}
                     ];
 
         chartTexts.forEach(function(text){
