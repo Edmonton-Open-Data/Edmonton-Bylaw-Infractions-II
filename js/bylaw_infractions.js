@@ -395,9 +395,9 @@ function main() {
         bubbleChart.render();
         
         //------------Font Size for axis and label texts------------
-        chartTexts = [ {selector: "text.pie-slice"       , scale: 0.05}, 
-                       {selector: "text.row"             , scale: 0.05}, 
-                       {selector: "g.node text"          , scale: 0.04}
+        chartTexts = [ {selector: "text.pie-slice" , scale: 0.05}, 
+                       {selector: "text.row"       , scale: 0.05}, 
+                       {selector: "g.node text"    , scale: 0.04}
                     ];
 
         chartTexts.forEach(function(text){
