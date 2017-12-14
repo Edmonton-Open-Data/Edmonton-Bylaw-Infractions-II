@@ -62,6 +62,7 @@ function main() {
             mapReset,
             title,
             texts,
+            chartTexts,
             slideMenu;
 
 
@@ -380,11 +381,30 @@ function main() {
                    .colorAccessor( function(d, i) { return i; } )
                    .colors(bubbleScaleColors);
         bubbleChart.render();
+        
+        //------------Font Size for axis and label texts------------
+        chartTexts = [ {selector: "text.pie-slice"       , scale: 0.05}, 
+                       {selector: "text.row"             , scale: 0.05}, 
+                       {selector: "g.node text"          , scale: 0.04}, 
+                       {selector: "g.tick text"          , scale: 0.04}, 
+                       {selector: "g.dc-legend-item text", scale: 0.045}
+                    ];
+
+        chartTexts.forEach(function(text){
+            textFontSize(text.selector, text.scale);
+        });
+        //----------------------------------------------------------
 
 
         function setHeight(chart) { 
             return chart.width() * chartHeightScale; 
         }
+        
+        function textFontSize(selector, scale) {
+            d3.selectAll(selector)[0].forEach(function(d){
+                d3.select(d).style("font-size", Math.round(pie.height() * scale, 1));
+            })            
+        }        
     
         
     }; //renderCharts
