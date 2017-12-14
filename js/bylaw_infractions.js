@@ -27,7 +27,7 @@ function main() {
 
         //Clean data - use only the properties needed
         //This is data from Bylaw_Infractions.csv about 60k rows(2017 data is Jan to Sep)
-        dataParsed = csv.map(function(d) {
+        var dataParsed = csv.map(function(d) {
 
             return {
                         YEAR:           +d.YEAR,
@@ -391,4 +391,6 @@ function main() {
 
 } //main
      
-window.onload = main;
+// window.onload = main;
+
+main();
