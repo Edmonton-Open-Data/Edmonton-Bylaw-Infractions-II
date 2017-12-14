@@ -411,9 +411,9 @@ function main() {
         }
         
         function textFontSize(selector, scale) {
-            d3.selectAll(selector)[0].forEach(function(d){
-                d3.select(d).style("font-size", Math.round(pie.height() * scale, 1));
-            })            
+            d3.selectAll(selector)
+              .style("font-size", Math.round(pie.height() * scale, 1));
+                      
         }        
     
         
