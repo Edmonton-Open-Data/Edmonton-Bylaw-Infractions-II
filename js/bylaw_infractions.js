@@ -298,7 +298,7 @@ function main() {
                      .append("tspan")
                      .text( function(d) { return d.name; } )
                      .append("tspan")
-                     .attr('x', 160)
+                     .attr('x', Math.round(pie.width() * 0.35, 1))
                      .attr('text-anchor', 'end')
                      .text( function(d) { return d.data.toLocaleString(); } );
             });
