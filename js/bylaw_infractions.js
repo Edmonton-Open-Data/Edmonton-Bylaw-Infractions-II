@@ -317,7 +317,7 @@ function main() {
         pie.render();
 
 
-        //---------------------------Sum and Percentage Stats---------------------------
+        //---------------------------Addition to Pie Chart Sum and Percentage Stats---------------------------
         texts = [   {
                         class:         "stats-title", 
                         x:             0, 
