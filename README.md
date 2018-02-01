@@ -17,7 +17,14 @@ Note: Failures of Dashboard I made Dashboard II a reality
 * Learning basics facilitates desired advances
 * Taking advantage of the DOM model
 # Improvements
+* Made the dashboard responsive using viewbox sizing
+* Changed the default map base layer at the core code of dc addons
 # TODOs
+* Update the text based on window resizing 
+* Improve the map brush colors
+* Paginate the row chart
+* update the data
+* Ans Previous TODO's
 -->
 Improvement of the previous [version](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I) and detailed information **coming soon!**
 
