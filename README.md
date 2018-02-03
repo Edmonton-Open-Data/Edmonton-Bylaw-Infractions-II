@@ -17,18 +17,6 @@ Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)***
 |    2   | Not taking time to understand arising issues      | Understood arising issues using global variables and Document Object Model      |
 |    3   | Intimidated by [Mean Daily Temperature Extremes](http://bl.ocks.org/KatiRG/cccd23dd7a830da0de5c) code and not extracting needed code | Diving deeper into [d3.js](http://devdocs.io/d3~3/), [dc.js](http://dc-js.github.io/dc.js/docs/html/), [leaflet.js](http://leafletjs.com/reference-0.7.7.html), [dc-addons](https://github.com/Intellipharm/dc-addons#dc-addons), and [bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) docs aided in code efficiency      | 
 |    4   | Abruptly used researched examples without deep thought | Mathematical procedures and operations are paramount for responsiveness      | 
-<!--
-## Lessons Learned from Dashboard I
-* Wrote code in the constraints of [Le choropleth](http://intellipharm.github.io/dc-addons/examples/leaflet-marker.html) and [Interactive Data Visualization](http://adilmoujahid.com/posts/2016/08/interactive-data-visualization-geospatial-d3-dc-leaflet-python/)
-* Not taking time to understand arising issues
-* Intimidated by [Mean Daily Temperature Extremes](http://bl.ocks.org/KatiRG/cccd23dd7a830da0de5c) code and not extracting needed code
-* Abruptly used researched examples without deep thought
-## Lessons Learned from Dashboard II
-* Learning [responsive basics](https://www.packtpub.com/web-development/building-responsive-data-visualizations-d3js-video) facilitated desired [improvements](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I/blob/master/README.md#todos)
-* Understood arising issues using global variables and Document Object Model
-* Diving deeper into [d3.js](http://devdocs.io/d3~3/), [dc.js](http://dc-js.github.io/dc.js/docs/html/), [leaflet.js](http://leafletjs.com/reference-0.7.7.html), [dc-addons](https://github.com/Intellipharm/dc-addons#dc-addons), and [bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) docs aided in code efficiency
-* Mathematical procedures and operations are paramount for responsiveness
--->
 ## Improvements
 * Altered layout to enable smooth viewing on both mobile and desktop
 * Made the dashboard responsive using [viewbox sizing](http://dc-js.github.io/dc.js/docs/html/dc.baseMixin.html#useViewBoxResizing__anchor)
