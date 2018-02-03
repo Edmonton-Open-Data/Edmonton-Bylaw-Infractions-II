@@ -23,7 +23,7 @@ Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)***
 * Changed the default map base layer at [base-map-chart.js](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-II/blob/master/libs/dc_addons/base-map-chart.js)
 * Removed [heatmap](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-II/blob/master/libs/dc_addons/base-map-chart.js) to speed up yearly and monthly analysis
 * [Checked TODO's](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I/blob/master/README.md#todos) for Dashboard I
-## TODOs
+## To-do's
 - [ ] Update the text based on window resizing 
 - [ ] Add responsive [map zooming](https://github.com/mikelotis/Edmonton-Municipality-II) and enhance chart title texts
 - [ ] Refactor the code using functional programming eg. using [transducers](https://medium.freecodecamp.org/efficient-data-transformations-using-transducers-c779043ba655)
