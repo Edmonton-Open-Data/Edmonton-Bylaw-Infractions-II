@@ -25,7 +25,7 @@ Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)***
 * [Checked To-do's](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#to-dos) for Dashboard I
 ## To-do's
 - [ ] Update the text based on window resizing 
-- [ ] Add responsive [map zooming](https://edmonton-open-data.github.io/Edmonton-Municipality-II/.) and enhance chart title texts
+- [ ] Add responsive [map zooming](https://github.com/Edmonton-Open-Data/Edmonton-Municipality-II) and enhance chart title texts
 - [ ] Refactor the code using functional programming eg. using [transducers](https://medium.freecodecamp.org/efficient-data-transformations-using-transducers-c779043ba655)
 - [ ] Improve clicked neighbourhoods' fill and stroke [colors](https://medium.freecodecamp.org/an-intro-to-color-theory-how-to-combine-colors-and-set-the-mood-of-your-designs-79bf5a45b3d)
 - [ ] Add capability to filter data by clicking the legend ranges, potential solutions - [filtering map markers](https://blogs.kent.ac.uk/websolutions/2015/01/29/filtering-map-markers-with-leaflet-js-a-brief-technical-overview/), [filter leaflet maps with a slider](http://www.digital-geography.com/filter-leaflet-maps-slider/), and [filtering data in leaflet](https://www.youtube.com/watch?v=rbnlnXIT4eI)
