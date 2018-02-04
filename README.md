@@ -20,7 +20,7 @@ Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)***
 ## Improvements
 * Altered layout to enable smooth viewing on both mobile and desktop
 * Made the dashboard responsive using [viewbox sizing](http://dc-js.github.io/dc.js/docs/html/dc.baseMixin.html#useViewBoxResizing__anchor)
-* Changed the default map base layer at [base-map-chart.js](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-II/blob/master/libs/dc_addons/base-map-chart.js)
+* Changed the default map base layer at [base-map-chart.js](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-II/blob/master/libs/dc_addons/base-map-chart.js)
 * Removed [heatmap](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-II/blob/master/libs/dc_addons/base-map-chart.js) to speed up yearly and monthly analysis
 * [Checked To-do's](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#to-dos) for Dashboard I
 ## To-do's
