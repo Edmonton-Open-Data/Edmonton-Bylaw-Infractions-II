@@ -5,7 +5,7 @@
 Larger map display, row and bar chart addition, and map encapsulating selection options are some improvements to [Dashboard I](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I). Data used in Dashboard II is similar to Dashboard I. Dashboard II's code is more efficient, maintainable, and scalable.<br>
 
 Inspiration for the Project: [Mean Daily Temperature Extremes](http://bl.ocks.org/KatiRG/cccd23dd7a830da0de5c) and drive to complete crucial [To-do's](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#to-dos)<br>
-Frameworks used include: [Leaflet.SlideMenu](https://github.com/unbam/Leaflet.SlideMenu), [FontAwesome](https://fontawesome.com/), and [same frameworks as Dashboard I](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I/blob/master/README.md#dashboard-summary)<br>
+Frameworks used include: [Leaflet.SlideMenu](https://github.com/unbam/Leaflet.SlideMenu), [FontAwesome](https://fontawesome.com/), and [same frameworks as Dashboard I](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#dashboard-summary)<br>
 Best viewed in: Google Chrome<br>
 Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)****](https://edmonton-open-data.github.io/Edmonton-Bylaw-Infractions-II/index.html)<br>
 
