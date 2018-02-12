@@ -394,7 +394,7 @@ function main() {
                    .colors(bubbleScaleColors);
         bubbleChart.render();
         
-        //------------Font Size for axis and label texts------------
+        //------------Font Size for pie legend and label texts------------
         chartTexts = [ {selector: "text.pie-slice" , scale: 0.05}, 
                        {selector: "text.row"       , scale: 0.05}, 
                        {selector: "g.node text"    , scale: 0.04}
