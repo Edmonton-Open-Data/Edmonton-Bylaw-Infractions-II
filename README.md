@@ -2,10 +2,10 @@
 ![](bylaw_infractions2.gif)
 
 ## Dashboard Summary
-Larger map display, row and bar chart addition, and map encapsulating selection options are some improvements to [Dashboard I](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I). Data used in Dashboard II is similar to Dashboard I. Dashboard II's code is more efficient, maintainable, and scalable.<br>
+Larger map display, row and bar chart addition, and map encapsulating selection options are some improvements to [Dashboard I](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I#bylaw-infractions-dashboard-i). Data used in Dashboard II is similar to Dashboard I. Dashboard II's code is more efficient, maintainable, and scalable.<br>
 
-Inspiration for the Project: [Mean Daily Temperature Extremes](http://bl.ocks.org/KatiRG/cccd23dd7a830da0de5c) and drive to complete crucial [To-do's](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#to-dos)<br>
-Frameworks used include: [Leaflet.SlideMenu](https://github.com/unbam/Leaflet.SlideMenu), [FontAwesome](https://fontawesome.com/), and [same frameworks as Dashboard I](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#dashboard-summary)<br>
+Inspiration for the Project: [Mean Daily Temperature Extremes](http://bl.ocks.org/KatiRG/cccd23dd7a830da0de5c) and drive to complete crucial [To-do's](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I#to-dos)<br>
+Frameworks used include: [Leaflet.SlideMenu](https://github.com/unbam/Leaflet.SlideMenu), [FontAwesome](https://fontawesome.com/), and [same frameworks as Dashboard I](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I#dashboard-summary)<br>
 Best viewed in: Google Chrome<br>
 Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)****](https://edmonton-open-data.github.io/Edmonton-Bylaw-Infractions-II/index.html)<br>
 
@@ -24,16 +24,14 @@ Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)***
 * Removed [heatmap](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#3-heatmap-yearly-and-monthly-trend) to speed up yearly and monthly analysis
 * [Checked To-do's](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#to-dos) for Dashboard I
 ## To-do's
-- [ ] Update the text based on window resizing 
-- [ ] Add responsive [map zooming](https://github.com/Edmonton-Open-Data/Edmonton-Municipality-II#edmonton-municipality-ii) and enhance chart title texts
+- [x] Add responsive [map zooming](https://github.com/Edmonton-Open-Data/Edmonton-Municipality-II#edmonton-municipality-ii) and enhance chart title texts
 - [ ] Refactor the code using functional programming eg. using [transducers](https://medium.freecodecamp.org/efficient-data-transformations-using-transducers-c779043ba655)
-- [ ] Improve clicked neighbourhoods' fill and stroke [colors](https://medium.freecodecamp.org/an-intro-to-color-theory-how-to-combine-colors-and-set-the-mood-of-your-designs-79bf5a45b3d)
 - [ ] Add capability to filter data by clicking the legend ranges, potential solutions - [filtering map markers](https://blogs.kent.ac.uk/websolutions/2015/01/29/filtering-map-markers-with-leaflet-js-a-brief-technical-overview/), [filter leaflet maps with a slider](http://www.digital-geography.com/filter-leaflet-maps-slider/), and [filtering data in leaflet](https://www.youtube.com/watch?v=rbnlnXIT4eI)
 - [ ] Add sidebar to house additional features, helpers - [How To - Side Navigation](https://www.w3schools.com/howto/howto_js_sidenav.asp) and [How to think like a programmer](https://www.w3schools.com/howto/howto_js_sidenav.asp)
 - [ ] [Paginate](https://github.com/Intellipharm/dc-addons#pagination-mixin) the row chart
 - [ ] Update the [data](https://data.edmonton.ca/Community-Services/Bylaw-Infractions/xgwu-c37w)
 - [ ] Improve user interaction experience for mobile
-- [ ] [Unchecked To-do's](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#to-dos) from Dashboard I
+- [ ] [Unchecked To-do's](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I#to-dos) from Dashboard I
 
 <!--
 Improvement of the previous [version](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I) and detailed information **coming soon!**
