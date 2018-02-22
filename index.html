@@ -3,23 +3,26 @@
 <head>
     <title>Bylaw Infractions</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/keen_io/keen-dashboards.css">
-    <link rel="stylesheet" href="libs/dc/dc.min.css">
-    <link rel="stylesheet" href="libs/leaflet/dist/leaflet.css">
-    <link rel="stylesheet" href="libs/font_awesome/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="libs/dc_addons/dc-leaflet-legend.css">
-    <link rel="stylesheet" href="libs/slideMenu/L.Control.SlideMenu.css">  
-    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.js">
-    <link rel="stylesheet" href="libs/keen_io/keen.min.js">
-    <link rel="stylesheet" href="css/bylaw_infractions.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-II/master/libs/keen_io/keen-dashboards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dc-addons@0.13.5/dist/leaflet-map/dc-leaflet-legend.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-II/master/libs/slideMenu/L.Control.SlideMenu.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bylaw_infractions.css">
 </head>
 <body class="application">
+    <div id="spinner"></div>
     <!-- Navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="https://mikelotis.github.io/Edmonton-Bylaw-Infractions/">
+                <a class="navbar-brand" href="https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-II">
                     Edmonton's Bylaw Infractions
                 </a>
             </div>
@@ -37,7 +40,9 @@
                         <div class="chart-wrapper">
                             <div class="chart-stage">
                                 <div class="chart-title">
-                                    <text>Neighbourhoods Map</text>
+                                    <span>
+                                        <strong>Neighbourhoods Map</strong>
+                                    </span>
                                 </div>
                                 <span id="records-count"></span>
                                 <div id="map-plot"></div>
@@ -56,7 +61,9 @@
                             <div class="chart-stage">
                                 <div id="row-chart" class="svg-container">
                                     <div class="chart-title">
-                                        Yearly Trend
+                                        <span>
+                                            <strong>Yearly Trend</strong>
+                                        </span>
                                         <span>
                                             <a class="reset" style="display:none" href="javascript:rowChart.filterAll(); dc.redrawAll();">
                                                 reset
@@ -73,7 +80,9 @@
                             <div class="chart-stage">
                                 <div id="bar-chart" class="svg-container">
                                     <div class="chart-title">
-                                        Monthly Trend
+                                        <span>
+                                            <strong>Monthly Trends</strong>
+                                        </span>
                                         <span>
                                             <a class="reset" style="display:none" href="javascript:barChart.filterAll(); dc.redrawAll();">
                                                 reset
@@ -96,7 +105,11 @@
                             <div class="chart-stage">
                                 <div id="pie-plot" class="svg-container">
                                     <div class="chart-title">
-                                        Types of Complaint
+                                        <span>
+                                            <strong>
+                                                Types of Complaint
+                                            </strong>
+                                        </span>
                                         <span>
                                             <a class="reset" style="display:none" href="javascript:pie.filterAll(); dc.redrawAll();">
                                                 reset
@@ -113,7 +126,11 @@
                             <div class="chart-stage">
                                 <div id="bubble-plot" class="svg-container">
                                     <div class="chart-title">
-                                        Initiators and Status
+                                        <span>
+                                            <strong>
+                                                Initiators and Status
+                                            </strong>
+                                        </span>
                                         <span>
                                             <a class="reset" style="display:none" href="javascript:bubbleChart.filterAll(); dc.redrawAll();">
                                                 reset
@@ -128,16 +145,18 @@
             </div>
         </div>
     </div>
-    <script src="libs/d3/d3.min.js"></script>
-    <script src="libs/crossfilter/crossfilter.min.js"></script>
-    <script src="libs/dc/dc.min.js"></script>
-    <script src="libs/leaflet/dist/leaflet.js"></script>
-    <script src="libs/slideMenu/L.Control.SlideMenu.js"></script>
-    <script src="libs/dc_addons/base-map-chart.js"></script>
-    <script src="libs/dc_addons/base-leaflet-chart.js"></script>
-    <script src="libs/dc_addons/leaflet-choropleth-chart.js"></script>
-    <script src="libs/dc_addons/bubble-cloud.js"></script>
-    <script src="libs/dc_addons/leaflet-legend.js"></script>
-    <script src="js/bylaw_infractions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-queue/1.2.3/queue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+    <script src="https://cdn.rawgit.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-II/master/libs/slideMenu/L.Control.SlideMenu.js"></script>
+    <script src="https://cdn.rawgit.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-II/7773c734/libs/dc_addons/base-map-chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dc-addons@0.13.5/src/scripts/base-leaflet-chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dc-addons@0.13.5/src/scripts/leaflet-choropleth-chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dc-addons@0.13.5/src/scripts/bubble-cloud.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dc-addons@0.13.5/src/scripts/leaflet-legend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+    <script src="bylaw_infractions.js"></script>
 </body>
 </html>

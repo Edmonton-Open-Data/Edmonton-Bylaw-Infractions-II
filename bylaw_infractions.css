@@ -1,0 +1,72 @@
+html, body {
+    height:     100%;
+    width:      100%;
+    overflow-x: hidden;
+}
+
+/* width for map and charts */
+#map-plot,
+.svg-container {
+    width: 100%;
+}
+
+/* map height */
+#map-plot {
+    padding-bottom: 129.6%;
+}
+
+/* to make map nice for 1920px width Screens and up */
+@media (min-width: 1920px) {
+    #map-plot {
+        padding-bottom: 125.3%;
+    }
+}
+
+
+/* top padding for all charts */
+#pie-plot > svg,
+#bar-chart > svg,
+#row-chart > svg,
+#bubble-plot > svg {
+    padding-top: 0.30em;
+}
+
+/* placed chart title as desired */
+#pie-plot > div,
+#bubble-plot > div,
+#bar-chart > div,
+#row-chart > div,
+#board > div > div:nth-child(1) > div > div > div > div > div.chart-title {
+    padding-left:   0;
+    padding-right:  0;
+    padding-bottom: 0.5em;
+    padding-top:    0.5em;
+}
+
+/* neighbourhood info on leaflet map */
+.myinfo {
+    padding:       0.5em;
+    font:          1.1em Arial, Helvetica;
+    background:  rgba(255,255,255,0.8);
+    border-radius: 0.5em;
+}
+
+/* path style */
+svg.leaflet-zoom-animated g path {
+    stroke:     rgba(31, 30, 30, 0.612);
+    stroke-width: 0.1em;
+    fill-opacity: 0.45;
+}
+
+/* legend rec style */
+.legend i {
+    opacity: 0.45;
+}
+
+/* path style on hover */
+svg.leaflet-zoom-animated g path:hover {
+    stroke:     rgb(0, 0, 0);
+    fill:       brown;
+    stroke-width: 0.1em;
+}
+
