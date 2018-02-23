@@ -1,5 +1,5 @@
 # Edmonton Bylaw Infractions II
-![](bylaw_infractions2.gif)
+![](bylaw-infractions.gif)
 
 ## Dashboard Summary
 Larger map display, row and bar chart addition, and map encapsulating selection options are some improvements to [Dashboard I](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I#bylaw-infractions-dashboard-i). Data used in Dashboard II is similar to Dashboard I. Dashboard II's code is more efficient, maintainable, and scalable.<br>
