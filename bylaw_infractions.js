@@ -220,15 +220,6 @@ document.addEventListener("DOMContentLoaded", function dashboard() {
  
          slideMenu.setContents(title + contents);
  
-         mapReset       = L.control({position: "bottomleft"});
-         mapReset.onAdd = function(map) {
-             this._span           = L.DomUtil.create("span", "myinfo");
-             this._span.innerHTML = '<a class="reset" style="display:none" href="javascript:dcMap.filterAll(); dc.redrawAll();">reset</a>';
-             return this._span;
-         };
- 
-         mapReset.addTo(map);
- 
          //http://leafletjs.com/examples/choropleth.html
          info       = L.control({position: "bottomleft"});
          info.onAdd = function(map) {
