@@ -26,7 +26,7 @@ Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)***
 ## To-do's
 - [ ] Refactor the code using functional programming eg. using [transducers](https://medium.freecodecamp.org/efficient-data-transformations-using-transducers-c779043ba655)
 - [ ] Add capability to filter data by clicking the legend ranges, potential solutions - [filtering map markers](https://blogs.kent.ac.uk/websolutions/2015/01/29/filtering-map-markers-with-leaflet-js-a-brief-technical-overview/), [filter leaflet maps with a slider](http://www.digital-geography.com/filter-leaflet-maps-slider/), and [filtering data in leaflet](https://www.youtube.com/watch?v=rbnlnXIT4eI)
-- [ ] Add sidebar to house additional features, helpers - [How To - Side Navigation](https://www.w3schools.com/howto/howto_js_sidenav.asp) and [How to think like a programmer](https://www.w3schools.com/howto/howto_js_sidenav.asp)
+- [ ] Add sidebar to house additional features, helpers - [How To - Side Navigation](https://www.w3schools.com/howto/howto_js_sidenav.asp) and [How to think like a programmer](https://medium.freecodecamp.org/how-to-think-like-a-programmer-3ae955d414cd)
 - [ ] [Paginate](https://github.com/Intellipharm/dc-addons#pagination-mixin) the row chart
 - [ ] Update the [data](https://data.edmonton.ca/Community-Services/Bylaw-Infractions/xgwu-c37w)
 - [ ] Improve user interaction experience for mobile
