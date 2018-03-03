@@ -2,10 +2,10 @@
 ![](bylaw-infractions.gif)
 
 ## Dashboard Summary
-Larger map display, row and bar chart addition, and map encapsulating selection options are some improvements to [Dashboard I](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I#bylaw-infractions-dashboard-i). Data used in Dashboard II is similar to Dashboard I. Dashboard II's code is more efficient, maintainable, and scalable.<br>
+Larger map display, row and bar chart addition, and map encapsulating selection options are some improvements to [Dashboard I](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#bylaw-infractions-dashboard-i). Data used in Dashboard II is similar to Dashboard I. Dashboard II's code is more efficient, maintainable, and scalable.<br>
 
-Inspiration for the Project: [Mean Daily Temperature Extremes](http://bl.ocks.org/KatiRG/cccd23dd7a830da0de5c) and drive to complete crucial [To-do's](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I#to-dos)<br>
-Frameworks used include: [Leaflet.SlideMenu](https://github.com/unbam/Leaflet.SlideMenu), [FontAwesome](https://fontawesome.com/), [Spin.js](https://spin.js.org/) and [same frameworks as Dashboard I](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I#dashboard-summary)<br>
+Inspiration for the Project: [Mean Daily Temperature Extremes](http://bl.ocks.org/gordonwoodhull/c506b130f17cd77a015b2b229ecb4f22) and drive to complete crucial [To-do's](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#to-dos)<br>
+Frameworks used include: [Leaflet.SlideMenu](https://github.com/unbam/Leaflet.SlideMenu), [FontAwesome](https://fontawesome.com/), [Spin.js](https://spin.js.org/) and [same frameworks as Dashboard I](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#bylaw-infractions-dashboard-i)<br>
 Best viewed in: Google Chrome<br>
 Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)****](https://edmonton-open-data.github.io/Edmonton-Bylaw-Infractions-II/index.html)<br>
 
@@ -15,7 +15,7 @@ Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)***
 | ------ | ------------- | ------------- |
 |    1   | Wrote code in the constraints of [Le choropleth](http://intellipharm.github.io/dc-addons/examples/leaflet-marker.html) and [Interactive Data Visualization](http://adilmoujahid.com/posts/2016/08/interactive-data-visualization-geospatial-d3-dc-leaflet-python/)     | Learning [responsive basics](https://www.packtpub.com/web-development/building-responsive-data-visualizations-d3js-video) facilitated desired [improvements](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#to-dos) |
 |    2   | Not taking time to understand arising issues      | Understood arising issues using global variables and Document Object Model      |
-|    3   | Intimidated by [Mean Daily Temperature Extremes](http://bl.ocks.org/KatiRG/cccd23dd7a830da0de5c) code and didn't extract needed code | Diving deeper into [d3.js](http://devdocs.io/d3~3/), [dc.js](http://dc-js.github.io/dc.js/docs/html/), [leaflet.js](http://leafletjs.com/reference-0.7.7.html), [dc-addons.js](https://github.com/Intellipharm/dc-addons#dc-addons), and [bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) docs aided in code efficiency      | 
+|    3   | Intimidated by [Mean Daily Temperature Extremes](http://bl.ocks.org/gordonwoodhull/c506b130f17cd77a015b2b229ecb4f22) code and didn't extract needed code | Diving deeper into [d3.js](http://devdocs.io/d3~3/), [dc.js](http://dc-js.github.io/dc.js/docs/html/), [leaflet.js](http://leafletjs.com/reference-0.7.7.html), [dc-addons.js](https://github.com/Intellipharm/dc-addons#dc-addons), and [bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) docs aided in code efficiency      | 
 |    4   | Abruptly used researched examples without deep thought | Mathematical procedures and operations are paramount for responsiveness      | 
 ## Improvements
 * Altered layout to enable smooth viewing on both mobile and desktop
@@ -30,7 +30,7 @@ Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)***
 - [ ] [Paginate](https://github.com/Intellipharm/dc-addons#pagination-mixin) the row chart
 - [ ] Update the [data](https://data.edmonton.ca/Community-Services/Bylaw-Infractions/xgwu-c37w)
 - [ ] Improve user interaction experience for mobile
-- [ ] [Unchecked To-do's](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I#to-dos) from Dashboard I
+- [ ] [Unchecked To-do's](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#to-dos) from Dashboard I
 
 <!--
 Improvement of the previous [version](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I) and detailed information **coming soon!**
