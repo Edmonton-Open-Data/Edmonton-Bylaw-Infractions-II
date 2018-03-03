@@ -31,6 +31,7 @@ Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)***
 - [ ] Update the [data](https://data.edmonton.ca/Community-Services/Bylaw-Infractions/xgwu-c37w)
 - [ ] Improve user interaction experience for mobile
 - [ ] [Unchecked To-do's](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#to-dos) from Dashboard I
+- [ ] Apply [Joey Cherdarchuk](https://www.darkhorseanalytics.com/blog/salvaging-the-pie?rq=data%20looks%20better%20naked) findings
 
 <!--
 Improvement of the previous [version](https://github.com/mikelotis/Edmonton-Bylaw-Infractions-I) and detailed information **coming soon!**
