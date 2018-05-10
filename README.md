@@ -32,4 +32,4 @@ Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)***
 - [ ] Improve user interaction experience for mobile
 - [ ] [Unchecked To-do's](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#to-dos) from Dashboard I
 - [ ] Apply [Joey Cherdarchuk](https://www.darkhorseanalytics.com/blog/salvaging-the-pie?rq=data%20looks%20better%20naked) findings
-- [ ] Fix jittery disaster that happened at Demo Camp 41 :'( [CSS Tricks](https://css-tricks.com/avoid-css-jitter/)
+- [ ] Fix jittery disaster that happened at Demo Camp 41 :'( [CSS Tricks](https://css-tricks.com/avoid-css-jitter/) or maybe height auto for map 
