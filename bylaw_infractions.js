@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function dashboard() {
      var target = document.getElementById("spinner");
      var spinner = new Spinner(opts).spin(target);
      queue()
-            .defer(d3.json, "../data/Edmonton2.json") //neighbourhoodsGejson
-            .defer(d3.json, "../data/data.json")     //datajson
+            .defer(d3.json, "https://raw.githubusercontent.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-II/master/data/Edmonton2.json") //neighbourhoodsGejson
+            .defer(d3.json, "https://raw.githubusercontent.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-II/master/data/data.json")     //datajson
             .await(renderCharts);
   
      function renderCharts(error, neighbourhoodsGejson, dataJson) {
