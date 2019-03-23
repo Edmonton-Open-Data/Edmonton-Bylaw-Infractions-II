@@ -23,7 +23,7 @@ Desktop and mobile Dashboard: [****BYLAW INFRACTIONS DASHBOARD II (CLICK ME!)***
 * Changed the default map base layer at [base-map-chart.js](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-II/blob/master/libs/dc_addons/base-map-chart.js)
 * Removed [heatmap](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#3-heatmap-yearly-and-monthly-trend) to speed up yearly and monthly analysis
 * [Checked To-do's](https://github.com/Edmonton-Open-Data/Edmonton-Bylaw-Infractions-I#to-dos) for Dashboard I
-## To-do's
+## Future Improvements
 - [ ] Refactor the code using functional programming eg. using [transducers](https://medium.freecodecamp.org/efficient-data-transformations-using-transducers-c779043ba655)
 - [ ] Add capability to filter data by clicking the legend ranges, potential solutions - [filtering map markers](https://blogs.kent.ac.uk/websolutions/2015/01/29/filtering-map-markers-with-leaflet-js-a-brief-technical-overview/), [filter leaflet maps with a slider](http://www.digital-geography.com/filter-leaflet-maps-slider/), and [filtering data in leaflet](https://www.youtube.com/watch?v=rbnlnXIT4eI)
 - [ ] Add sidebar to house additional features, helpers - [How To - Side Navigation](https://www.w3schools.com/howto/howto_js_sidenav.asp) and [How to think like a programmer](https://medium.freecodecamp.org/how-to-think-like-a-programmer-3ae955d414cd)
